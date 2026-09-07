@@ -3,8 +3,8 @@ const os = require('os');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const VERSION = process.env.APP_VERSION || 'v2-github';
-const ORIGIN = process.env.APP_ORIGIN || 'github';
+const VERSION = process.env.APP_VERSION || 'v3-ghcr';
+const ORIGIN = process.env.APP_ORIGIN || 'ghcr';
 const DEMO_NAME = process.env.DEMO_NAME || 'demo3';
 
 app.get('/', (req, res) => {
