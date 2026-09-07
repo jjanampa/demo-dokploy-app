@@ -17,8 +17,8 @@ jobs:
       - uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: jjanampa
+          password: ${{ secrets.GHCR_TOKEN }}
       - uses: docker/metadata-action@v5
         id: meta
         with:
